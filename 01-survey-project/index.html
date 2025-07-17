@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header-Start -->
+    <header id="header" class="font-serif">
+        <div class="bg-white text-center py-4">
+            <div class="container mx-auto ">
+                <h1 class="text-red-500 text-4xl font-bold my-4 ">Evden Çalışma Anketi </h1>
+            </div>
+        </div>
+    </header>
+    <!-- Result-Section -->
+    <section>
+        <div class="result py-4 bg-white text-center hidden">
+            <div class="container mx-auto">
+                <p class="font-serif"><span class="text-red-500 text-3xl p-3">0%</span>ofise dönmek istiyorsun.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Questions-Section -->
+    <section id="questions" class="bg-[#456882] font-Gemunu">
+        <div class="container mx-auto ps-20">
+            <form id="pollForm" class="question-form space-y-4 my-2 py-4">
+                <div>
+                    <!-- Soru -->
+                    <div>
+                        <p class="text-lg font-medium text-white">1.Ofiste daha verimli çalışıyorum.</p>
+                    </div>
+
+                    <!-- Evet/Hayır Seçenekleri -->
+                    <div class="flex flex-col gap-4">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="q1"
+                            value="evet"
+                            class="h-4 w-4 text-blue-500 focus:ring-blue-300 border-gray-300"
+                        />
+                        <span class="text-white">Evet</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer ">
+                        <input
+                            type="radio"
+                            name="q1"
+                            value="hayir"
+                            class="h-4 w-4 text-blue-500 focus:ring-blue-300 border-gray-300"
+                        />
+                        <span class="text-white">Hayır</span>
+                        </label>
+                    </div>
+
+                    <!-- Hata Mesajı -->
+                    <p id="pollError" class="text-red-500 text-sm mt-1 hidden">Lütfen bir seçenek seçin.</p>
+
+                   
+                </div>
+                <div>
+                    <!-- Soru -->
+                    <div>
+                        <p class="text-lg font-medium text-white">2.Ofise tam zamanlı dönmek istiyorum.</p>
+                    </div>
+
+                    <!-- Evet/Hayır Seçenekleri -->
+                    <div class="flex flex-col gap-4">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="q2"
+                            value="evet"
+                            class="h-4 w-4 text-blue-500 focus:ring-blue-300 border-gray-300"
+                        />
+                        <span class="text-white">Evet</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer ">
+                        <input
+                            type="radio"
+                            name="q2"
+                            value="hayir"
+                            class="h-4 w-4 text-blue-500 focus:ring-blue-300 border-gray-300"
+                        />
+                        <span class="text-white">Hayır</span>
+                        </label>
+                    </div>
+
+                    <!-- Hata Mesajı -->
+                    <p id="pollError" class="text-red-500 text-sm mt-1 hidden">Lütfen bir seçenek seçin.</p>
+
+                    
+                </div>
+                <div>
+                    <!-- Soru -->
+                    <div>
+                        <p class="text-lg font-medium text-white">3.Evdeyken teknik sorunlar daha zor çözülüyor.</p>
+                    </div>
+
+                    <!-- Evet/Hayır Seçenekleri -->
+                    <div class="flex flex-col gap-4">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="q3"
+                            value="evet"
+                            class="h-4 w-4 text-blue-500 focus:ring-blue-300 border-gray-300"
+                        />
+                        <span class="text-white">Evet</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer ">
+                        <input
+                            type="radio"
+                            name="q3"
+                            value="hayir"
+                            class="h-4 w-4 text-blue-500 focus:ring-blue-300 border-gray-300"
+                        />
+                        <span class="text-white">Hayır</span>
+                        </label>
+                    </div>
+
+                    <!-- Hata Mesajı -->
+                    <p id="pollError" class="text-red-500 text-sm mt-1 hidden">Lütfen bir seçenek seçin.</p>
+
+                </div>
+                <div>
+                    <!-- Soru -->
+                    <div>
+                        <p class="text-lg font-medium text-white">4.Evdeyken haftalık taslakları yetiştirmekte zorlanıyorum.</p>
+                    </div>
+
+                    <!-- Evet/Hayır Seçenekleri -->
+                    <div class="flex flex-col gap-4">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                        <input
+                            type="radio"
+                            name="q4"
+                            value="evet"
+                            class="h-4 w-4 text-blue-500 focus:ring-blue-300 border-gray-300"
+                        />
+                        <span class="text-white">Evet</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer ">
+                        <input
+                            type="radio"
+                            name="q4"
+                            value="hayir"
+                            class="h-4 w-4 text-blue-500 focus:ring-blue-300 border-gray-300"
+                        />
+                        <span class="text-white">Hayır</span>
+                        </label>
+                    </div>
+
+                    <!-- Hata Mesajı -->
+                    <p id="pollError" class="text-red-500 text-sm mt-1 hidden">Lütfen bir seçenek seçin.</p>
+                </div>
+                <div class="text-center">  
+                <!-- Gönder Butonu -->
+                    <button
+                        type="submit"
+                        class=" bg-red-700 text-2xl text-white p-2 px-6 my-2 rounded-md hover:bg-red-800 transition-colors ">  <!-- mx-auto block kullanarak inline elementi ortalayabilirsin -->
+                    
+                        Oyla
+                    </button>  
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <script src="survey.js"></script>
+</body>
+</html>
