@@ -1,0 +1,16 @@
+::placeholder {
+    color: red !important;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.todos {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.delete {
+    cursor: pointer;
+}
+.filtered {
+    display: none !important;
+}

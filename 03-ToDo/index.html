@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark">
+    <header class="container">
+        <div class="text-center text-light my-4 row">
+            <div class="col-md-3 mx-auto">
+                <h1 class="mb-4">Todo App</h1>
+                <form action="" class="search">
+                    <input class="form-control text-danger fw-bold" type="text" name="search" id="" placeholder="Ara...">
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Content - Start -->
+    <section class="container">
+        <!-- List - Start -->
+        <div class="row">
+            <div class="col-md-3 mx-auto">
+                <ul class="list-group todos">
+                    <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-secondary">
+                        <span class="text-danger fw-bold fst-italic">yüzmeye git</span>
+                        <i class="fa-solid fa-trash-can delete"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-secondary">
+                        <span class="text-danger fw-bold fst-italic">spor yap</span>
+                        <i class="fa-solid fa-trash-can delete"></i>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action list-group-item-secondary">
+                        <span class="text-danger fw-bold fst-italic">ders çalış</span>
+                        <i class="fa-solid fa-trash-can delete"></i>
+                    </li>
+                </ul>
+                 <!-- Add List İtem -->
+                <form action="" class="text-center my-4 add">
+                    <label class="text-light">Yeni İş Ekle</label>
+                    <input class="form-control m-auto text-danger fw-bold" type="text" name="add" id="">
+                </form>
+            </div>
+        </div>
+        <!-- List - End -->
+    </section>
+    <!-- Content - End -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/a8b2a9db5f.js" crossorigin="anonymous"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
