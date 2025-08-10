@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class=" bg-blue-400 flex h-screen justify-center items-center">
+    <div class="sliderContainer m-1 w-175 h-125 relative">
+        <div class="imgContainer flex overflow-hidden rounded-4xl shadow-xl shadow-white transition-transform duration-500 ease-in-out">
+            
+            <img src="https://picsum.photos/id/255/700/500" alt="">
+            <img src="https://picsum.photos/id/280/700/500" alt="">
+            <img src="https://picsum.photos/id/400/700/500" alt="">
+            <img src="https://picsum.photos/id/305/700/500" alt="">
+            <img src="https://picsum.photos/id/250/700/500" alt="">
+
+        </div>
+        <i class="fa-solid fa-circle-arrow-left absolute left-2 top-1/2 -translate-y-1/2 text-2xl text-amber-50 cursor-pointer hover:text-red-700"></i>
+        <i class="fa-solid fa-circle-arrow-right absolute right-2 top-1/2 -translate-y-1/2 text-2xl text-amber-50 cursor-pointer hover:text-red-700"></i>
+            
+    </div>
+
+    <script src="https://kit.fontawesome.com/a8b2a9db5f.js" crossorigin="anonymous"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
